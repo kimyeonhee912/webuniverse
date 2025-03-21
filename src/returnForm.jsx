@@ -3,6 +3,8 @@ import "./returnForm.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import ReturnMain from "./returnMain";
+import { IoIosPin } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 export default function ReturnForm() {
   const handleLogoClick = () => {
@@ -20,7 +22,7 @@ export default function ReturnForm() {
           <div className="link-group">
             <div className="logo">
               <p onClick={handleLogoClick} style={{ cursor: "pointer" }}>
-                Bigs
+                혜진대학교
               </p>
             </div>
             <div className="links">
@@ -36,6 +38,19 @@ export default function ReturnForm() {
         </div>
         <div className="background-image">
           <div className="background-text">교육</div>
+          <nav className="navigation-bar">
+            <ul>
+              <li>
+                {" "}
+                <IoIosPin />
+                교육
+              </li>
+              <IoIosArrowForward />
+              <li>학생정보</li>
+              <IoIosArrowForward />
+              <li>휴학/복학</li>
+            </ul>
+          </nav>
         </div>
       </header>
 
