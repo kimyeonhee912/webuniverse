@@ -1,0 +1,116 @@
+/* 메인 컨텐츠 스타일 */
+.return-main {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 20px auto;
+}
+
+.return-main h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.return-main h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.return-main p {
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.return-main ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.return-main table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.return-main table th,
+.return-main table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.return-main table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.return-main table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.faq-section {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.faq-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.faq-dropdown {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.faq-search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.faq-search input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.faq-search-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.faq-list {
+  margin-top: 20px;
+}
+
+.faq-item {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.faq-question {
+  font-weight: bold;
+  color: #333333;
+  justify-content: space-around;
+  display: flex;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  color: #333333;
+}
