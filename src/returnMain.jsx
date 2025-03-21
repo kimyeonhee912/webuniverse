@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import "./returnMain.css";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { FaQuestionCircle } from "react-icons/fa";
+import { MdOutlineArrowDropDownCircle } from "react-icons/md";
+import { FaStarOfLife } from "react-icons/fa";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const faqs = [
   {
     question: "일반휴학(복학) 할 때 신청이나 저장이 안됩니다. 어떻게 하나요?",
     answer:
-      "일반휴학(복학)은 모바일에서는 신청할 수 없습니다. PC 환경에서만 할 수 있으며 크롬에서 대진대학교 검색 후 다시 신청해주세요.",
+      "일반휴학(복학)은 모바일에서는 신청할 수 없습니다. PC 환경에서만 할 수 있으며 크롬에서 혜린린대학교 검색 후 다시 신청해주세요.",
   },
   {
     question: "휴학할 때 등록금을 납부해야 하나요?",
@@ -39,12 +42,6 @@ const faqs = [
   },
   {
     question:
-      "동일 학기 내 일반휴학 후 군휴학을 할 경우에는 일반휴학 기간은 사용 가능한 휴학횟수에 가산이 되나요?",
-    answer:
-      "1) 수업일수 2/3선 까지 마치고 군휴학을 하는 경우에는 일반휴학을 휴학기간(횟수)에 가산하지 않습니다.\n2) 일반휴학 후 동일한 학기 2/3 선 이후에 군휴학(입영일 기준)을 하게 될 경우에는 일반휴학의 휴학기간이 인정되어 휴학 횟수에 가산됩니다.",
-  },
-  {
-    question:
       "부사관으로 임관할 경우 증빙자료는 무엇이며, 언제까지 신청할 수 있나요?",
     answer:
       "1) 종합서비스센터로 창구방문 신청을 하여야 합니다.\n2) 훈련기간을 마치고 임관이 확정된 이후 약식개인인사자력표를 증빙자료로 제출하면 됩니다.",
@@ -66,7 +63,7 @@ const ReturnMain = () => {
   return (
     <div className="return-main">
       <h2>휴학/복학</h2>
-      <h3>휴학</h3>
+      <div className="returnWord1">휴학</div>
       <p>휴학이란 학적은 보유하되 일정 기간 학업을 쉬는 상태를 말함</p>
       <h3>휴학구분</h3>
       <ul>
@@ -101,8 +98,8 @@ const ReturnMain = () => {
       <ul>
         <li>온라인 신청</li>
         <ul>
-          <li>일반휴학 : 포털대진→ 학적정보→ 휴학/복학→ 일반휴학</li>
-          <li>입대휴학 : 포털대진 → 학적정보 → 휴학/복학 → 군휴학</li>
+          <li>일반휴학 : 포털혜린→ 학적정보→ 휴학/복학→ 일반휴학</li>
+          <li>입대휴학 : 포털혜린 → 학적정보 → 휴학/복학 → 군휴학</li>
         </ul>
         <li>방문신청</li>
         <ul>
@@ -112,7 +109,7 @@ const ReturnMain = () => {
             휴학을 하고자 하는 경우
           </li>
           <li>
-            일반휴학: 홈페이지 → 포털대진 → 학적정보 → 휴·복학휴학/복학 → 원서
+            일반휴학: 홈페이지 → 포털혜린 → 학적정보 → 휴·복학휴학/복학 → 원서
             출력(특별사유 관련 증빙서류) → 종합서비스센터
           </li>
         </ul>
@@ -184,8 +181,11 @@ const ReturnMain = () => {
           </tr>
         </tbody>
       </table>
-      <p>문의 : 종합서비스센터(TEL 031-539-1301 / FAX 1305)</p>
-      <h3>복학</h3>
+      <div className="noteTelNumber">
+        {" "}
+        <FaStarOfLife /> 문의 : 종합서비스센터(TEL 041-870-8868 / FAX 6477)
+      </div>
+      <div className="returnWord2">복학</div>
       <p>
         복학이란 휴학한 자가 휴학 기간 만료로 학업을 계속하고자 할 때 소정의
         기간 내에 복학 신청
@@ -205,10 +205,10 @@ const ReturnMain = () => {
       <h3>신청방법</h3>
       <ul>
         <li>
-          홈페이지 포털대진에서 신청 : 일반복학(군복학, 일반 조기 복학 포함)
+          홈페이지 포털혜린에서 신청 : 일반복학(군복학, 일반 조기 복학 포함)
         </li>
         <ul>
-          <li>홈페이지 → 포털대진 → 학적정보 → 휴·복학 메뉴에서 신청</li>
+          <li>홈페이지 → 포털혜린 → 학적정보 → 휴·복학 메뉴에서 신청</li>
         </ul>
         <li>종합서비스센터 방문신청 : 군 조기복학</li>
       </ul>
@@ -274,9 +274,12 @@ const ReturnMain = () => {
           </tr>
         </tbody>
       </table>
-      <h2>휴학/복학 FAQ</h2>
+      <div className="returnWord3">휴학/복학 FAQ</div>
       <div className="faq-section">
-        <p>총 13 개의 게시물이 있습니다.</p>
+        <p className="highlight-number-section">
+          총 <span className="highlight-number">13</span> 개의 게시물이
+          있습니다.
+        </p>
         <div className="faq-controls">
           <select className="faq-dropdown">
             <option value="title">제목</option>
@@ -293,8 +296,9 @@ const ReturnMain = () => {
         {faqs.map((faq, index) => (
           <div key={index} className="faq-item">
             <div className="faq-question" onClick={() => toggleFAQ(index)}>
-              <FaQuestionCircle />
+              <FaQuestionCircle className="fa-question-circle" />
               {faq.question}
+              <MdOutlineArrowDropDownCircle className="md-outline-arrow-drop-down-circle" />
             </div>
             {openIndex === index && (
               <div className="faq-answer">{faq.answer}</div>

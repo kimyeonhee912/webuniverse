@@ -2,8 +2,8 @@
 .return-main {
   padding: 20px;
   background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
   width: 80%;
   margin: 20px auto;
 }
@@ -20,6 +20,30 @@
   font-weight: bold;
   color: #333333;
   margin-bottom: 10px;
+}
+
+.returnWord1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.returnWord2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+  margin-top: 70px;
+}
+
+.returnWord3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+  margin-top: 70px;
 }
 
 .return-main p {
@@ -56,10 +80,24 @@
   background-color: #f9f9f9;
 }
 
+.noteTelNumber {
+  padding-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #013c8a;
+  margin-top: 10px;
+}
 .faq-section {
   display: flex;
-  margin-top: 20px;
+  margin-top: 10px;
   justify-content: space-between;
+}
+.highlight-number-section {
+  font-weight: bold;
+}
+
+.highlight-number {
+  color: #ff0000; /* Set the color to blue */
 }
 
 .faq-controls {
@@ -69,8 +107,13 @@
 }
 
 .faq-dropdown {
-  padding: 5px;
+  padding: 10px;
   font-size: 16px;
+  background-color: #d5d5d5c3;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
 }
 
 .faq-search {
@@ -82,12 +125,18 @@
 .faq-search input {
   padding: 5px;
   font-size: 16px;
+  background-color: #d5d5d5c3;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
 }
 
 .faq-search-button {
   padding: 5px 10px;
   font-size: 16px;
   cursor: pointer;
+  height: 40px;
+  background-color: #e3e3e3c3;
 }
 
 .faq-list {
@@ -100,13 +149,30 @@
   margin-bottom: 10px;
   padding: 10px;
   cursor: pointer;
+  height: 50px;
+  align-content: center;
 }
 
 .faq-question {
   font-weight: bold;
   color: #333333;
-  justify-content: space-around;
   display: flex;
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Add gap between items */
+  font-size: 18px;
+}
+
+.faq-question .fa-question-circle {
+  font-size: 40px; /* Adjust size of the question icon */
+  margin-left: 20px;
+  margin-right: 10px;
+  color: #013c8ae0;
+}
+
+.faq-question .md-outline-arrow-drop-down-circle {
+  font-size: 30px; /* Adjust size of the dropdown icon */
+  margin-left: auto;
+  color: #bdbdbd;
 }
 
 .faq-answer {

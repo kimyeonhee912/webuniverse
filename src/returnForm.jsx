@@ -5,6 +5,7 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 import ReturnMain from "./returnMain";
 import { IoIosPin } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import { FaArrowUp } from "react-icons/fa";
 
 export default function ReturnForm() {
   const handleLogoClick = () => {
@@ -21,12 +22,21 @@ export default function ReturnForm() {
         <div className="header-links">
           <div className="link-group">
             <div className="logo">
-              <p onClick={handleLogoClick} style={{ cursor: "pointer" }}>
-                혜진대학교
+              <p
+                onClick={handleLogoClick}
+                style={{
+                  cursor: "pointer",
+                  fontSize: "1.5rem",
+                  fontWeight: "bold",
+                }}
+              >
+                혜린대학교
               </p>
             </div>
             <div className="links">
-              <span>login</span> | <span>language</span> | <span>popup</span>
+              <span>Login</span> <div className="separator">|</div>{" "}
+              <span>Language</span> <div className="separator">|</div>{" "}
+              <span>Popup</span>
             </div>
           </div>
           <div className="icon-1">
@@ -59,6 +69,7 @@ export default function ReturnForm() {
       </main>
 
       <button className="scroll-to-top" onClick={handleScrollToTop}>
+        <FaArrowUp />
         Top
       </button>
     </div>
