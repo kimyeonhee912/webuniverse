@@ -1,0 +1,69 @@
+/* 헤더 스타일 */
+.home-header {
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  padding: 20px 45px;
+}
+
+/* 제목 스타일 */
+.home-header p {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* 버튼 컨테이너 스타일 */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.header-links {
+  display: flex;
+}
+
+.header-links .link-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #d0d0d0; /* Background color for p and span elements */
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.header-links .link-group p,
+.header-links .link-group span {
+  margin: 0;
+  color: #007bff;
+}
+
+.header-links span {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.header-links .icon {
+  margin-left: 10px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.icon-1 {
+  background-color: #c0c0c0; /* Background color for the first icon */
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.icon-2 {
+  background-color: #a0a0a0; /* Background color for the second icon */
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
